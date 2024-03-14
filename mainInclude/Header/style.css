@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+img {
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+
+/* section one css srarts here  */
+
+.sectoinOne {
+    position: relative;
+    background-color: #fff;
+    /* height: 100px; */
+    padding: 5px 0;
+}
+
+Main img{
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.secOneOne {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #11123d;
+    /* background-color: white; */
+    color: black;
+    /* -webkit-backdrop-filter: saturate(180%) blur(50px);
+    backdrop-filter: saturate(180%) blur(50px); */
+    color: white;
+}
+
+.hiddenUL {
+    /* visibility:hidden;   */
+    transition: all 0.5a ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:  #11123d;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    width:max-content;
+    /* padding: 10px 10px; */
+    z-index: 999;
+    text-align: left;
+    box-shadow: inset 0 0 0 1px rgba(99, 99, 99, 0.1);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(99, 99, 99, 0.1);
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.homeOne {
+    position: relative;
+    transition: all ease-in-out 1s;
+}
+
+.homeOne:hover{
+    border-bottom: 1px solid white;
+}
+
+.homeOne a{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.homeOne:hover .hiddenUL {
+    visibility: visible;
+    opacity: 1;
+    top: 173%;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.hiddenUL li a{
+    color: white;
+    position: relative;
+    padding: 2px 0px;
+}
+
+
+.hiddenUL li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    /* color: var(--bg-crimson); */
+    transition: all ease 1s;
+}
+
+.hiddenUL li  a:hover::after{
+    /* border-bottom: 2px solid white; */
+    width: 100%;
+}
+
+.hiddenUL li {
+    transition: all ease 0.5s;
+}
+
+
+.hiddenUL li:hover {
+    background-color: rgba(207, 206, 206, 0.1);
+    color: white;
+    -webkit-box-shadow: inset 3px 0 0 0 rgb(38, 70, 229);
+    box-shadow: inset 3px 0 0 0 rgb(38, 70, 229);
+}
+
+.hiddenUL i{
+    color: white;
+    font-size: 15px;
+    margin-right: 5px;
+    transition: all ease 0.5s;
+}
+.hiddenUL li:hover i{
+    margin-right: 8px;
+    
+}
+
+
+.MainLogo img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.carousel-item{
+    position: relative;
+}
+
+.carouselContent{
+    position: absolute;
+    inset: 30% 0 0 0 ;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* ----- offcanvas css ------- */
+
+
+.offcanvas-header{
+    background-color: #11123d;
+}
+
+.offcanvas-body{
+    /* height: 500px;
+    padding: 50px 0px; */
+    overflow-x: hidden;
+}
+
+#offcanvasWithBothOptions{
+    width: 90%;
+}
+
+.toggleNav {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.bookBtn{
+    border-radius: 5px;
+}
+
+.bookBtn a{
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.mobileViewNav{
+    background-color: transparent;
+    -webkit-box-shadow: inset 3px 0 0 0 rgb(229, 201, 38);
+    box-shadow: inset 3px 0 0 0 rgb(229, 201, 38);
+}
+
+.MobileViewNav1 .MobileViewNav2{
+    padding: 10px 0px ;
+    border-bottom: 1px solid gray;
+}
+
+.mobileViewNavSlogan{
+    font-size: 10px;
+}
+
+/* ----- offcanvas css ------ */
+
+
+/* home page css */
+
+
+.secOneHeadOne small{
+    color: gold;
+    font-size: 14px;
+}
+.secOneHeadOne h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 5px solid gold;
+    width: 50%;
+    display: inline;
+}
+
+.secOneHeadTwo p{
+    color: white;
+    text-align: left;
+}
+
+.secOneHeadTwo button{
+    outline: none;
+    border: none;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 3px;
+    padding: 3px 4px;
+}
+
+
+.modal-backdrop.fade.show{
+    opacity: 0;
+    z-index: -1;
+}
+
+.hiddenUL button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+
+}
+
+/* home page css */
+
+/* section one css ends here  */
+
+.mainimage{
+     background-image: url('https://media.istockphoto.com/id/178177525/photo/little-girl-walks-in-national-park.jpg?s=612x612&w=0&k=20&c=GwzGCYbPd8QcL7TeI-4mG0x-21bmvL2MQ7nVkYJTgSY=');
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 100vh;
+     background-size: cover;
+     object-fit: cover;
+}
+
+@media(min-width:512px){
+    #offcanvasWithBothOptions{
+        width: 70%;
+    }
+}
+@media(min-width:768px){
+    #offcanvasWithBothOptions{
+        width: 50%;
+    }
+}
+@media(min-width:992px){
+    #offcanvasWithBothOptions{
+        width: 40%;
+    }
+
+}

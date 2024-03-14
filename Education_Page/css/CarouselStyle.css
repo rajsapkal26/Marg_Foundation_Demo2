@@ -1,0 +1,123 @@
+:root{
+  --color: #11123d;
+}
+
+/* Owl Carousel Style */
+
+.owl-theme .owl-dots {
+  margin-top: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.owl-theme .owl-nav{
+  margin-top: 10px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+  color: white;
+  padding: 3px 13px !important;
+  background-color: #271b6b;
+}
+
+.owl-carousel .owl-stage-outer{
+  height: 100vh;
+}
+
+/* .item img{
+height: 100vh;
+width: 100%;
+} */
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #271b6b;
+  border: 1px black solid;
+  
+}
+
+/* .carousel_section{
+  
+  position: absolute;
+  top: 0;
+  z-index: -4;   
+  height: 100vh; 
+} */
+
+.Carousel_bg_img_1{
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)), url(../Images/background/Slider_7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.Carousel_bg_img_2{
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url(../Images/background/Slider_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.Carousel_bg_img_3{
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url(../Images/background/Slider_8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.Carousel_bg_img_4{
+  background-image : linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url(../Images/background/Slider_5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+
+
+/* connected-carousels css */
+
+.slick-prev1,
+.slick-next1 {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+.slick-prev1:before,
+.slick-next1:before {
+  content: ' ';
+  font-size: 20px;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: var(--color);
+  color: rgb(237, 230, 230);
+}
+
+.slick-prev1 {
+  left: -10px;
+  z-index: 8;
+
+}
+
+.slick-next1 {
+  right: -10px;
+}

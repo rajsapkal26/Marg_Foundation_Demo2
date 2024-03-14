@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  /* font-family: 'Protest Strike', sans-serif; */
+ /* font-family: 'Poppins', sans-serif; */
+ /* font-family: 'Luxurious Roman', serif; */
+ font-family: 'Merriweather', serif;
+}
+
+.space_between{
+height: 90vh;
+ position: relative;
+ z-index: -15;
+}
+
+.change_space{
+  height: 105vh;
+ position: relative;
+ z-index: -15;
+ transition: all ease 0.3s;
+}
+
+/* Navigation Start */
+
+
+
+
+:root {
+  --background-color: white;
+  --color:black;
+  --hover-background-color: #151756;
+  --hover-color:white;
+  --main-color:#11123d;
+}
+
+
+
+
+body{
+  position: relative;
+}
+
+
+.donate_btn2{
+  
+
+  background-color: white;
+  color:var(--main-color);
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid var(--main-color);
+  transition: all ease-out 0.3s;
+}
+
+.donate_btn2:hover{
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 500;
+ 
+}
+
+.social_handle{
+  color: var(--main-color);
+  transition: all ease 0.4s;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: white;
+
+ 
+}
+
+.social_handle:hover{
+  color: white;
+  transform: scale(1.2);
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color);
+ 
+}
+
+
+
+
+
+.fo_hove{
+  transition: all ease 0.3s;
+}
+
+
+.fo_hove:hover{
+  padding-left: 9px;
+  text-decoration: underline !important;
+}
+
+.up_arrow{
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+
+.sticky {
+  transition: all ease 0.4s; 
+ 
+}
+
+
+
+
+
+
+
+

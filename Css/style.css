@@ -1,0 +1,879 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+img {
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+/* section one css srarts here  */
+
+.sectoinOne {
+    position: relative;
+    background-color: #fff;
+    padding: 5px 0;
+    height: 90px;
+}
+
+Main img{
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.secOneOne {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 90px;
+    background-color: #11123d;
+    /* background-color: white; */
+    color: black;
+    /* -webkit-backdrop-filter: saturate(180%) blur(50px);
+    backdrop-filter: saturate(180%) blur(50px); */
+    color: white;
+}
+
+.hiddenUL {
+    /* visibility:hidden;   */
+    transition: all 0.5a ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:  #11123d;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    width:max-content;
+    /* padding: 10px 10px; */
+    z-index: 999;
+    text-align: left;
+    box-shadow: inset 0 0 0 1px rgba(99, 99, 99, 0.1);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(99, 99, 99, 0.1);
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.homeOne {
+    position: relative;
+    transition: all ease-in-out 1s;
+}
+
+.homeOne:hover{
+    border-bottom: 1px solid white;
+}
+
+.homeOne a{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none
+}
+
+
+.homeOne:hover .iconMain {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg); 
+        transform: rotate(180deg); 
+}
+
+
+.homeOne:hover .hiddenUL {
+    visibility: visible;
+    opacity: 1;
+    top: 173%;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.hiddenUL li a{
+    color: white;
+    position: relative;
+    padding: 2px 0px;
+}
+
+
+.hiddenUL li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    /* color: var(--bg-crimson); */
+    transition: all ease 1s;
+}
+
+.hiddenUL li:hover a::after{
+    /* border-bottom: 2px solid white; */
+    width: 100%;
+}
+
+.hiddenUL li {
+    transition: all ease 0.5s;
+}
+
+
+.hiddenUL li:hover {
+    background-color: rgba(207, 206, 206, 0.1);
+    color: white;
+    -webkit-box-shadow: inset 3px 0 0 0 rgb(38, 70, 229);
+    box-shadow: inset 3px 0 0 0 rgb(38, 70, 229);
+}
+
+.hiddenUL i{
+    color: white;
+    font-size: 15px;
+    margin-right: 5px;
+    transition: all ease 0.5s;
+}
+.hiddenUL li:hover i{
+    margin-right: 8px;
+    
+}
+
+
+.MainLogo img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.carousel-item{
+    position: relative;
+}
+
+.carouselContent{
+    position: absolute;
+    inset: 30% 0 0 0 ;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* ----- offcanvas css ------- */
+
+
+.offcanvas-header{
+    background-color: #11123d;
+}
+
+.offcanvas-body{
+    /* height: 500px;
+    padding: 50px 0px; */
+    overflow-x: hidden;
+}
+
+#offcanvasWithBothOptions{
+    width: 90%;
+}
+
+.toggleNav {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.bookBtn{
+    border-radius: 5px;
+}
+
+.bookBtn a{
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.mobileViewNav{
+    background-color: transparent;
+    -webkit-box-shadow: inset 3px 0 0 0 rgb(229, 201, 38);
+    box-shadow: inset 3px 0 0 0 rgb(229, 201, 38);
+}
+
+.MobileViewNav1 .MobileViewNav2{
+    padding: 10px 0px ;
+    border-bottom: 1px solid gray;
+}
+
+.mobileViewNavSlogan{
+    font-size: 10px;
+}
+
+.offcanvasSocialHandle span{
+    color: #151756;
+    transition: all ease 0.4s;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: white;
+    margin: 0 3px;
+}
+
+.offcanvasSocialHandle span a{
+    color: #11123d;
+}
+.offcanvasSocialHandle span a:hover{
+    color: #fff;
+}
+
+.offcanvasSocialHandle span:hover{
+    color: white;
+    transform: scale(1.2);
+    background-color: #151756;
+    border: 2px solid #151756;   
+}
+
+/* ----- offcanvas css ------ */
+
+
+/* home page css */
+
+
+.secOneHeadOne small{
+    color: gold;
+    font-size: 14px;
+}
+.secOneHeadOne h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 5px solid gold;
+    width: 50%;
+    display: inline;
+}
+
+.secOneHeadTwo p{
+    color: white;
+    text-align: left;
+}
+
+.secOneHeadTwo button{
+    outline: none;
+    border: none;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 3px;
+    padding: 3px 4px;
+}
+
+
+.modal-backdrop.fade.show{
+    opacity: 0;
+    z-index: -1;
+}
+
+.hiddenUL button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+
+}
+
+/* home page css */
+
+/* header carousal css */
+
+
+
+
+.carousel-item{
+    position: relative;
+}
+
+.carouselContent{
+    position: absolute;
+    inset: 30% 0 0 0 ;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 80vh;
+    /* object-fit: cover; */
+}
+
+
+.homeCarousal2{
+    background-image: url('../images/1.jpg');
+    /* background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 90vh; */
+}
+.homeCarousal3{
+    background-image: url('../images/2.jpg');
+    /* background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 90vh; */
+}
+.homeCarousal1{
+    background-image: url('../images/3.jpg');
+    /* background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 90vh; */
+}
+
+.homeCarousal1, .homeCarousal2,.homeCarousal3{
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    object-fit: cover;
+    width: 100%;
+    height:50vh;
+}
+
+
+.carouselContent h1{
+    color: #11123d;
+    font-weight: 700;
+}
+.carouselContent p{
+    color: black;
+    font-weight: 600;
+}
+
+.mainClass {
+    position: relative;
+}
+
+.hadleButton {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+}
+
+.hadleButton button{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #11123d;
+    margin: 0px 5px ;
+}
+
+.carousel-control-prev small{
+    position: relative;
+}
+
+.carousel-control-prev small::after{
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* header carousal css */
+
+
+/* section one css ends here  */
+
+.mainimage{
+     background-image: url('https://media.istockphoto.com/id/178177525/photo/little-girl-walks-in-national-park.jpg?s=612x612&w=0&k=20&c=GwzGCYbPd8QcL7TeI-4mG0x-21bmvL2MQ7nVkYJTgSY=');
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 100vh;
+     background-size: cover;
+     object-fit: cover;
+}
+
+
+
+/* section three css starts */
+
+.secThreeOne img{
+    width: 100%;
+    height: 300px;
+}
+
+.secThreeTwo h2{
+    color: #11123d;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+.secThreeTwo p{
+    color: #11123d;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+
+.secThreeTwo{
+    position: relative;
+}
+
+.secThreeTwoChildOne {
+    position: relative;
+}
+
+.secThreeTwoChildTwo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    font-weight: bolder;
+    border-radius: 5px 0 0 0;
+    border-right: 1px dashed #11123d;
+    border-bottom: 1px dashed #11123d;
+    transition: all ease-in-out 0.5s;
+}
+.secThreeTwoChildThree{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    font-weight: bolder;
+    border-radius: 0 0 5px 0;
+    border-left: 1px dashed #11123d;
+    border-top: 1px dashed #11123d;
+    transition: all ease-in-out 0.5s;
+}
+
+.secThreeTwoChildThree:hover{
+    background-color: #11123d;
+    color: #fff;
+    border-left: 1px dashed white;
+    border-top: 1px dashed white;
+    
+    
+}
+.secThreeTwoChildTwo:hover{
+    background-color: #11123d;
+    color: #fff;
+    border-right: 1px dashed white;
+    border-bottom: 1px dashed white;
+    
+}
+
+.missionOne{
+    position: relative;
+    margin: 0 auto;
+}
+
+.missionOne::after{
+    content: " ";
+    position: absolute;
+    inset: 50% 0 0 -40px;
+    background-color: crimson;
+    width: 30px;
+    height: 3px;
+}
+
+.counter {
+	font-family: 'Rampart One', cursive;
+}
+.counter:not(.is-visible) {
+	/* visibility: hidden; */
+}
+
+/* section three css end */
+
+/* section events css start */
+    .secEventOne img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    
+    .secEventsFig img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+    }
+
+    .sectionEvents h3{
+        color: #11123d;
+        font-weight: bold;
+    }
+
+/* section evens css end */
+
+
+
+/* section four css */
+
+
+.firstFounder{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+}
+
+.firstFounder i{
+    color: #11123d;
+    font-size: 25px;
+}
+
+.founderContent h4 {
+    color:#11123d;
+    font-weight: 700;
+
+}
+
+.founderContent span {
+    position: relative;
+    color: #11123d;
+    font-weight: 500;
+
+}
+
+.founderContent span::after{
+    position: absolute;
+    content: " ";
+    top: 10px;
+    left: -30px;
+    width: 20px;
+    height: 3px;
+    background-color: crimson;
+}
+
+.founderContentPara p{
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #11123d !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #11123d !important;
+}
+
+
+.owl-carousal{
+    display: block;
+}
+
+.founderImg1{
+    background-image: url('https://images.unsplash.com/photo-1480429370139-e0132c086e2a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fHww');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.founderImg2{
+    background-image: url('https://media.istockphoto.com/id/1476170969/photo/portrait-of-young-man-ready-for-job-business-concept.webp?b=1&s=170667a&w=0&k=20&c=FycdXoKn5StpYCKJ7PdkyJo9G5wfNgmSLBWk3dI35Zw=');
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.founderImg3{
+    background-image: url('https://images.unsplash.com/photo-1557862921-37829c790f19?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFufGVufDB8fDB8fHww');
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+/* section four css */
+
+
+/* sectoin event  css starts here */
+
+.eventparentOne{
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+}
+.eventparentOne img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+
+}
+
+
+.eventChildOne {
+    position: absolute;
+    inset: 0 0 0 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+
+.eventparentOne:hover .eventChildOne{
+    height: 100%;
+}
+
+.eventMainParent{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 5px;
+}
+
+
+.eventMainChild h3{
+    color: #11123d;
+    font-weight: 700;
+}
+.eventMainChild h5{
+    color: #11123d;
+    font-weight: 700;
+}
+.eventMainChild span{
+    padding: 0 10px;
+    border-bottom: 4px solid crimson;
+    border-width: 80%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* sectoin event css ends here */
+
+
+
+/* footer css start */
+
+
+.space_between{
+    height: 90vh;
+     position: relative;
+     z-index: -15;
+    }
+    
+    .change_space{
+      height: 105vh;
+     position: relative;
+     z-index: -15;
+     transition: all ease 0.3s;
+    }
+    
+    /* Navigation Start */
+    
+    
+    
+    
+    :root {
+      --background-color: white;
+      --color:black;
+      --hover-background-color: #151756;
+      --hover-color:white;
+    
+    }
+    
+    
+    
+    
+    /* body{
+      position: relative;
+    } */
+    
+    
+    .donate_btn2{
+      background-color: white;
+      color:#151756;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 20px;
+      border: 1px solid #151756;
+      transition: all ease-out 0.3s;
+    }
+    
+    .donate_btn2:hover{
+      background-color: #151756;
+      color: white;
+      font-weight: 500;
+     
+    }
+    
+    .social_handle{
+      color: #151756;
+      transition: all ease 0.4s;
+      border: 2px solid white;
+      border-radius: 10px;
+      padding: 5px;
+      background-color: white;
+    
+     
+    }
+    
+    .social_handle:hover{
+      color: white;
+      transform: scale(1.2);
+      background-color: #151756;
+      border: 2px solid #151756;
+     
+    }
+    
+    .fo_hove{
+      transition: all ease 1s;
+      position: relative;
+    }
+    .fo_hove::after{
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        transition: all ease 1s;
+    }
+    
+    
+    .fo_hove:hover::after{
+        width: 100%;
+    }
+    .fo_hove:hover{
+        margin-left: 5px;
+    }
+    
+    .up_arrow{
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+    }
+
+     
+    
+     .footerUp{
+        position: relative;
+     }
+
+    .sticky {
+      transition: all ease 0.4s; 
+     
+    }
+    
+    
+    
+    
+    
+
+/* footer css end */
+
+@media(min-width:512px){
+    #offcanvasWithBothOptions{
+        width: 70%;
+    }
+}
+@media(min-width:768px){
+    #offcanvasWithBothOptions{
+        width: 50%;
+    }
+
+
+    .homeCarousal1, .homeCarousal2,.homeCarousal3{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        object-fit: cover;
+        width: 100%;
+        height:70vh;
+    }
+}
+@media(min-width:992px){
+    #offcanvasWithBothOptions{
+        width: 40%;
+    }
+
+    .homeCarousal2, .homeCarousal3{
+        background-position: 0px 0px ;
+    }
+
+    .homeCarousal1{
+        background-position: 10% 0px;
+        background-size: cover;
+        object-fit: cover;
+    }
+    
+
+}
+@media(min-width:1024px){
+    .homeCarousal1, .homeCarousal2,.homeCarousal3{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        width: 100%;
+        height:90vh;
+    }
+
+}

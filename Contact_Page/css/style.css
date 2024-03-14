@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+:root {
+  --main-color:#11123d;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+  /* color: var(--main-color); */
+}
+
+.text-white{
+  color: white;
+}
+
+
+.page-heading{
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)), url(../image/Banner-7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.default_btn{
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  transition: all ease 0.3s;
+}
+
+.default_btn:hover{
+  background-color: var(--main-color);
+  color: white;
+}
+
+.default_color{
+  color: var(--main-color);
+}
+
+.before_e{
+ position: relative;
+ padding-left: 40px;
+ font-size: 22px;
+}
+
+.before_e::before{
+    content: " ";
+    position: absolute;
+    inset: 50% 0 0 0;
+    background-color: crimson;
+    width: 30px;
+    height: 3px;
+}
+
+.header_object{
+  width: 100%;
+}
+
+.footer_object{
+  width: 100%;
+  /* height: 200px; */
+}

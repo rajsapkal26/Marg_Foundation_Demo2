@@ -1,0 +1,117 @@
+
+
+/* footer css start */
+
+
+.space_between{
+    height: 90vh;
+     position: relative;
+     z-index: -15;
+    }
+    
+    .change_space{
+      height: 105vh;
+     position: relative;
+     z-index: -15;
+     transition: all ease 0.3s;
+    }
+    
+    /* Navigation Start */
+    
+    
+    
+    
+    :root {
+      --background-color: white;
+      --color:black;
+      --hover-background-color: #151756;
+      --hover-color:white;
+    
+    }
+    
+    
+    
+    
+    /* body{
+      position: relative;
+    } */
+    
+    
+    .donate_btn2{
+      background-color: white;
+      color:#151756;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 20px;
+      border: 1px solid #151756;
+      transition: all ease-out 0.3s;
+    }
+    
+    .donate_btn2:hover{
+      background-color: #151756;
+      color: white;
+      font-weight: 500;
+     
+    }
+    
+    .social_handle{
+      color: #151756;
+      transition: all ease 0.4s;
+      border: 2px solid white;
+      border-radius: 10px;
+      padding: 5px;
+      background-color: white;
+    
+     
+    }
+    
+    .social_handle:hover{
+      color: white;
+      transform: scale(1.2);
+      background-color: #151756;
+      border: 2px solid #151756;
+     
+    }
+    
+    .fo_hove{
+      transition: all ease 1s;
+      position: relative;
+    }
+    .fo_hove::after{
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        transition: all ease 1s;
+    }
+    
+    
+    .fo_hove:hover::after{
+        width: 100%;
+    }
+    .fo_hove:hover{
+        margin-left: 5px;
+    }
+    
+    .up_arrow{
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+    }
+
+     
+    
+     .footerUp{
+        position: relative;
+     }
+
+    .sticky {
+      transition: all ease 0.4s; 
+     
+    }
+    
+
+/* footer css end */
